@@ -1,26 +1,44 @@
 def count_items(items):
     # TODO: Return the number of items in the list
-    pass
+    return len(items)
 
 def sum_numbers(numbers):
     # TODO: Return the sum of all numbers in the list
-    pass
+    return sum(numbers)
 
 def find_largest(numbers):
     # TODO: Return the largest number in the list
-    pass
+    return max(numbers)
 
 def count_even_numbers(numbers):
     # TODO: Return the count of even numbers in the list
-    pass
+    for i in numbers:
+        if i % 2 == 0:
+            return numbers
 
 def sum_digits(number):
     # TODO: Return the sum of digits in the given number
-    pass
+    e = str(number)
+    v = list(e)
+    count = 0
+    # for i in v:
+    #     count = count +1
+    # return number
+    for i in e:
+        if i in v:
+            count = count +1
+        return sum(number)
+       
 
 def count_vowels(string):
     # TODO: Return the count of vowels in the string (case-insensitive)
-    pass
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in vowels:
+        if char in vowels:
+            count = count +1
+    return string
+        
 
 def multiply_list_elements(numbers):
     # TODO: Return the product of all elements in the list
@@ -37,7 +55,11 @@ def fibonacci_sequence(n):
 
 def remove_vowels(string):
     # TODO: Return the string with all vowels removed
-    pass
+    vowels = 'aeiouAEIOU'
+    for char in vowels:
+        if char in string.pop:
+            return string
+
 
 def create_multiplication_table(n):
     # TODO: Return a 2D list representing multiplication table up to n
@@ -49,5 +71,8 @@ def count_character_frequency(string):
 
 def reverse_words(sentence):
     # TODO: Return the sentence with each word reversed
-    pass
+    char = 'abc'
+    for n in range(-1):
+        if n in char:
+            return sentence
 
