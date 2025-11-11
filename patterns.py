@@ -38,7 +38,10 @@ def count_vowels(string):
 
 def multiply_list_elements(numbers):
     # TODO: Return the product of all elements in the list
-    pass
+    total = 1
+    for i in numbers:
+        total *= i
+    return total
 
 def create_number_triangle(n):
     # TODO: Return a list of strings representing a number triangle
@@ -52,9 +55,11 @@ def fibonacci_sequence(n):
 def remove_vowels(string):
     # TODO: Return the string with all vowels removed
     vowels = 'aeiouAEIOU'
-    for char in vowels:
-        if char in string.pop:
-            return string
+    count = 0
+    for char in string:
+        if char in string:
+            count += 1
+    return string
 
 
 def create_multiplication_table(n):
