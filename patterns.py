@@ -30,10 +30,10 @@ def count_vowels(string):
     # TODO: Return the count of vowels in the string (case-insensitive)
     vowels = "aeiouAEIOU"
     count = 0
-    for char in vowels:
+    for char in string:
         if char in vowels:
             count = count +1
-    return string
+    return count
         
 
 def multiply_list_elements(numbers):
