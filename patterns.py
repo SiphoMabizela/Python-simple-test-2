@@ -12,9 +12,11 @@ def find_largest(numbers):
 
 def count_even_numbers(numbers):
     # TODO: Return the count of even numbers in the list
+    count = 0
     for i in numbers:
         if i % 2 == 0:
-            return numbers
+            count += 1
+    return count
 
 def sum_digits(number):
     # TODO: Return the sum of digits in the given number
