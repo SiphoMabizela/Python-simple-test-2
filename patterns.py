@@ -20,16 +20,10 @@ def count_even_numbers(numbers):
 
 def sum_digits(number):
     # TODO: Return the sum of digits in the given number
-    e = str(number)
-    v = list(e)
-    count = 0
-    # for i in v:
-    #     count = count +1
-    # return number
-    for i in e:
-        if i in v:
-            count = count +1
-        return sum(number)
+    total = 0
+    for i in str(number):
+        total += int(i)
+    return total
        
 
 def count_vowels(string):
